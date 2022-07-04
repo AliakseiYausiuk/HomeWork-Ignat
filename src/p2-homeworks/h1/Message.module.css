@@ -1,0 +1,57 @@
+
+/*Структуру папок не делал по BEM не думаю что это тут нужно! */
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.message__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-self: end;
+}
+
+.message__item {
+    width: 300px;
+    height: 80px;
+    background-color: #282c34;
+    border-radius: 5px 5px 5px 0;
+    margin: 0 0 0 20px;
+    position: relative;
+
+}
+
+.message__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: radial-gradient(80px at top left, transparent 49%, #282c34 51%) no-repeat right bottom;
+}
+
+.message__name {
+    margin: 0;
+    color: blueviolet;
+    margin: 10px 0 0 20px;
+}
+
+.message__text {
+    margin: 0;
+    color: white;
+    margin: 0 0 0 20px;
+}
+
+.message__time {
+    margin: 0;
+    color: darkgrey;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
