@@ -13,7 +13,7 @@ function Message({...data}: dataType) {
     return (
         <div style={{backgroundColor: 'violet'}}>
             <div className={styles.message}>
-                <img className={styles.message__img} src={data.avatar} alt={`foto ${data.name}`}/>
+                <img src={data.avatar} alt={`foto ${data.name}`}/>
                 <div className={styles.message__item}>
                     <h3 className={styles.message__name}>{data.name}</h3>
                     <p className={styles.message__text}>{data.message}</p>
